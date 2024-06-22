@@ -1,0 +1,45 @@
+.app__navbar{
+    @apply fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 bg-white bg-opacity-25 backdrop-blur-sm;
+    @apply border-2 border-white border-opacity-15  z-10;
+}
+
+.app__navbar-logo{
+    @apply flex justify-center items-center;
+}
+.app__navbar-logo img{
+    @apply w-[90px] h-[20px] lg:w-44 lg:h-10;
+}
+
+.app__navbar-links{
+    @apply flex justify-center items-center list-none;
+}
+
+.app__navbar-links li{
+    @apply my-0 mx-4 cursor-pointer flex-col;
+}
+.app__navbar-links li:hover div{
+    @apply bg-sky-600;
+}
+
+
+.app__navbar-menu{
+    @apply lg:hidden w-9 h-9 rounded-full relative flex justify-center items-center bg-blue-700;
+}
+.app__navbar-menu svg{
+    color:white;
+    @apply w-2/3 h-2/3;
+    @apply cursor-pointer;
+
+}
+.app__navbar-menu div{
+    background: url('../../assets/bgWhite.png');
+    @apply fixed top-0 right-0 bottom-0 bg-white z-20 p-4 w-4/5 h-screen flex justify-end items-end flex-col ;
+    @apply bg-cover bg-repeat;
+}
+
+.app__navbar-menu div svg{
+    @apply text-blue-700;
+    @apply cursor-pointer;
+    width: 35px;
+    height: 35px;
+}

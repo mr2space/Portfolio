@@ -1,0 +1,20 @@
+.app__footer-card{
+    @apply min-w-[290px] flex justify-start items-center mx-0 my-4 p-4 rounded-xl cursor-pointer bg-gray-100 transition-all;
+    @apply hover:shadow-md;
+}
+.app__footer-card img{
+    width:40px;
+    height: 40px;
+    margin:0 0.7rem;
+}
+.app__footer-card p, .app__footer-card a{
+    font-weight: 600;
+}
+
+.app__footer-form input, .app__footer-form textarea{
+    @apply w-full p-4 border-none rounded-lg bg-blue-300 text-black outline-none; 
+}
+
+.app__footer-form input::placeholder, .app__footer-form textarea::placeholder{
+    @apply text-black ;
+}
