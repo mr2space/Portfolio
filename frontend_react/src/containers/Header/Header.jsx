@@ -72,7 +72,7 @@ const Header = () => {
         whileInView={scaleVariance.whileInView}
         className='app__header-circles'
       >
-        {[images.flutter, images.redux, images.sass].map((item)=>(
+        {[images.cpp, images.react, images.django].map((item)=>(
           <div className='circle_cmp flex justify-center items-center'>
             <img src={item} alt="tech" />
           </div>

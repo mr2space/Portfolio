@@ -11,7 +11,6 @@ const AppWrap = (Component, idname, classNames) => function HOC() {
       <div className="app__wrapper h-full w-full">
         <Component />
       </div>
-      <NatvigationDots active={idname} />
     </div>
   )
 }

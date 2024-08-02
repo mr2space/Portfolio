@@ -18,12 +18,12 @@
     @apply my-0 mx-4 cursor-pointer flex-col;
 }
 .app__navbar-links li:hover div{
-    @apply bg-sky-600;
+    @apply bg-3-primary;
 }
 
 
 .app__navbar-menu{
-    @apply lg:hidden w-9 h-9 rounded-full relative flex justify-center items-center bg-blue-700;
+    @apply lg:hidden w-9 h-9 rounded-full relative flex justify-center items-center bg-3-primary;
 }
 .app__navbar-menu svg{
     color:white;
@@ -38,7 +38,7 @@
 }
 
 .app__navbar-menu div svg{
-    @apply text-blue-700;
+    @apply bg-3-primary;
     @apply cursor-pointer;
     width: 35px;
     height: 35px;

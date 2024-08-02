@@ -17,7 +17,7 @@ const Navbar = () => {
             {['home', 'work', 'contact', 'skills'].map((item)=>(
                 <li key={`link-${item}`} className="p-0 flex-col justify-center items-center flex">
                     <div className=" w-[5px] h-[5px] rounded-full mb-1"  />
-                    <a href={`#${item}`} className=" text-gray-700 flex-col uppercase font-medium transition-all hover:text-sky-600" >{item}</a>
+                    <a href={`#${item}`} className=" text-gray-700 flex-col uppercase font-medium transition-all hover:text-3-primary" >{item}</a>
                 </li>
             ))}
         </ul>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     <ul className="list-none m-0 p-0 flex justify-start items-start flex-col h-full w-full lg:hidden">
                     {['home', 'work', 'contact', 'skills'].map((item)=>(
                         <li key={`menu-${item}`}  className="m-4">
-                            <a href={`#${item}`} className=" text-gray-700 flex-col uppercase font-medium transition-all hover:text-sky-600" >{item}</a>
+                            <a href={`#${item}`} className=" text-gray-700 flex-col uppercase font-medium transition-all hover:text-3-primary" >{item}</a>
                         </li>
                     ))}
                     </ul>

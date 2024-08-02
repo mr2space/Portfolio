@@ -35,10 +35,10 @@ const Footer = () => {
   };
 
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <h2 className="head-text text-5xl text-center w-full font-semibold m-4">Take a coffee & chat with me</h2>
+    <div id="contact" className='lg:pt-20 bg-1-lg-backg w-full flex flex-col justify-center items-center bg-0-lg-backg'>
+      <h2 className="head-text text-5xl text-center w-full font-semibold m-4 ">Take a  <span className='text-3-primary'>coffee</span> & chat with <span className='text-3-primary'>me</span></h2>
 
-      <div className="app__footer-cards w-3/5 flex justify-evenly items-center flex-wrap-reverse mt-8 my-8">
+      <div className="app__footer-cards w-2/5 flex justify-evenly items-center flex-wrap-reverse mt-8 my-8">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
           <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ? (
-        <div className="app__footer-form flex items-center w-3/5 gap-4 flex-col my-4 mx-8 app__flex">
+        <div className="app__footer-form flex items-center w-2/5 gap-4 flex-col my-4 mx-8 app__flex">
           <div className="app__flex w-full transition-all">
             <input className="" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>

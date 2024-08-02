@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 
 export const App = () => {
   return (
-    <div className=" bg-sky-100">
+    <div className=" bg-0-lg-backg">
         <Navbar />
         <Header />
         <About />

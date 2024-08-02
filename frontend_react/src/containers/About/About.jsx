@@ -12,9 +12,9 @@ const About = () => {
     {title:"Devops", description:"I am good dev", imgUrl:images.about04}
   ]
   return (
-    <div className='flex-1 w-full flex-col lg:pt-20'>
+    <div className=' bg-0-lg-backg flex-1 w-full flex-col lg:pt-20'>
     <h2 className='text-5xl text-center font-semibold m-4'>
-      I know that <span className=' text-blue-600'>Good Design</span> <br /> means <span className=' text-blue-600'> Good Business</span>
+      I know that <span className=' text-3-primary'>Good Design</span> <br /> means <span className=' text-3-primary'> Good Business</span>
     </h2>
     <div className="app__profiles flex justify-center items-start flex-wrap mt-8">
         {abouts.map((about, idx)=>(

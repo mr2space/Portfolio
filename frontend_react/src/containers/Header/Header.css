@@ -1,6 +1,6 @@
 #home{
     background: url('../../assets/bgIMG.png');
-    @apply bg-cover bg-center bg-repeat;
+    @apply bg-cover bg-center bg-repeat bg-0-lg-backg;
 }
 
 .app__header{

@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavigationDots.css";
 
 const NatvigationDots = ({ active }) => {
+  const [handleEvent, setHandleEvent] = useState(active);
   return (
     <div className="app__navigation">
       {["home", "about","work", "contact", "skills"].map((item, idx) => (
           <a
-            href={`#${item}`}
-            key={item+idx}
+            href={`#${handleEvent}`}
+            key={handleEvent+idx}
             className="app__navigation-dot"
-            style={active === item? {backgroundColor:"#313bac"}:{}}
+            onClick={()=>setHandleEvent(item)}
+            style={handleEvent === item? {backgroundColor:"#313bac"}:{}}
           />
       ))}
     </div>

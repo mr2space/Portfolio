@@ -7,9 +7,9 @@ import { images } from "../../constants";
 
 const Work = () => {
   const Data = [
-    {title:"modern ui", imageUrl:images.skype, description:'best ui ever', project_link:"google.com", code_link:"github.com", tags:["App", "Web"]},
-    {title:"modern ui", imageUrl:images.vue, description:'best ui ever', project_link:"google.com", code_link:"github.com", tags:["Cloud", "Web"]},
-    {title:"modern ui", imageUrl:images.typescript, description:'best ui ever', project_link:"google.com", code_link:"github.com", tags:["Code"]},
+    {title:"modern ui", imageUrl:images.skype, description:'best ui ever', project_link:"google.com", code_link:"https://www.github.com/mr2space", tags:["App", "Web"]},
+    {title:"modern ui", imageUrl:images.vue, description:'best ui ever', project_link:"google.com", code_link:"https://www.github.com/mr2space", tags:["Cloud", "Web"]},
+    {title:"modern ui", imageUrl:images.typescript, description:'best ui ever', project_link:"google.com", code_link:"https://www.github.com/mr2space", tags:["Code"]},
   ]
   const [sampleData, setSampleData] = useState(Data)
   const [activeFilter, setActiveFilter] = useState("All");
@@ -30,10 +30,10 @@ const Work = () => {
 
 
   return (
-    <div className="flex flex-1 flex-col w-full lg:pt-20">
+    <div className="flex bg-0-lg-backg flex-1 flex-col w-full lg:pt-20">
       <h2 className="text-5xl text-center font-semibold m-4">
-        I know that <span className=" text-blue-600">Good Design</span> <br />{" "}
-        means <span className=" text-blue-600"> Good Business</span>
+        I know that <span className=" text-3-primary">Good Design</span> <br />{" "}
+        means <span className=" text-3-primary"> Good Business</span>
       </h2>
 
       <div className="app__work-filter flex flex-row justify-center items-center gap-4 mt-16 mb-8">
