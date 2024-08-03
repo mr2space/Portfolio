@@ -31,7 +31,7 @@ const Header = () => {
         transition={{
           duration:0.5
         }}
-        className='app__header-info'
+        className='app__header-info '
       >
         <div className="app__header-badge">
           <div className="badge-cmp flex justify-center items-center">
@@ -56,6 +56,7 @@ const Header = () => {
         className='app__header-img'
       >
         <img src={images.profile} className=' w-full object-contain z-[10] relative' alt="profile_bg" />
+
         <motion.img
           whileInView={{scale:[0,1]}}
           transition={{duration:1, ease:"easeInOut"}}
@@ -72,12 +73,16 @@ const Header = () => {
         whileInView={scaleVariance.whileInView}
         className='app__header-circles'
       >
-        {[images.cpp, images.react, images.django].map((item)=>(
-          <div className='circle_cmp flex justify-center items-center'>
+        {[images.cpp, images.react, images.django].map((item, idx)=>(
+          <div key={idx} className='circle_cmp flex justify-center items-center'>
             <img src={item} alt="tech" />
           </div>
         ))}
       </motion.div>
+      
+      <div className="resume-btn">
+          <a href="https://drive.google.com/file/d/1jNXosYE-evC4EepxM4J8Ii3k_Ze4zuLX/view?usp=sharing" target='_blank' download>Download Resume</a>
+      </div>
 
     </div>
   )

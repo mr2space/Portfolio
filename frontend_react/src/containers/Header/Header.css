@@ -81,3 +81,69 @@
     height: 90%;
     @apply absolute left-0 right-0 bottom-0 ;
 }
+
+
+
+/* Resume btn -------------------------------------------------------------------------- */
+
+.resume-btn{
+    @apply relative mx-auto my-10 md:my-0 md:absolute md:bottom-16 md:right-20 ;
+    transition: all 0.4s;
+}
+.resume-btn a{
+    @apply px-6 py-3 text-white font-bold;
+    background: rgb(46,49,146);
+    background: linear-gradient(55deg, rgba(46,49,146,1) 2%, rgb(18, 175, 175) 100%);
+    position: relative;
+    transform-style: preserve-3d;
+    border-radius: 0px;
+    transition: all 3s;
+}
+
+
+.resume-btn:hover{
+    transform: translate(2px, 2px);
+}
+  
+.resume-btn a::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(55deg, rgba(46,49,146,1) 2%, rgb(18, 175, 175) 100%);
+    transform: translate3d(14px, 14px, 0) scale(0.97);
+    filter: blur(14px);
+    opacity: var(0.84);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    transition: all 0.4s;
+}
+
+
+.resume-btn:hover a::before {
+    transform: translate3d(6px, 8px, 0) scale(0.97);
+    filter: blur(2px);
+    opacity: var(0.84);
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.resume-btn a::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+    transition: all 3s;
+}
+        

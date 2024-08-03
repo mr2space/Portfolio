@@ -1,0 +1,74 @@
+#sudoku{
+    background-image: url("../../assets/backg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @apply px-10;
+}
+
+.sudoku_heading{
+    @apply text-7xl lg:text-8xl font-bold text-transparent bg-clip-text backdrop-saturate-200;
+    @apply relative top-20 mx-auto lg:mx-20 drop-shadow-2xl;
+    background-image: url("../../assets/btn-back.png");
+}
+
+
+.btn_download{
+    @apply relative top-64 mx-auto lg:mx-20 w-min;
+}
+.btn_download a{
+    @apply w-[300px] h-[60px] flex items-center justify-center;
+    @apply font-semibold text-white text-2xl tracking-widest;
+    background-position: center;
+    background-image: url("../../assets/btn-back.png");
+    transform-style: preserve-3d;
+    transition: all 0.4s;
+}
+
+
+.btn_download:hover{
+    transform: translate(2px, 2px);
+}
+  
+.btn_download a::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../../assets/btn-back.png");
+    transform: translate3d(14px, 14px, 0) scale(0.97);
+    filter: blur(14px);
+    opacity: var(0.84);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    transition: all 0.4s;
+}
+
+
+.btn_download:hover a::before {
+    transform: translate3d(6px, 8px, 0) scale(0.97);
+    filter: blur(6px);
+    opacity: var(0.84);
+}
+
+.btn_download a::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+    transition: all 3s;
+}
+
+
+.pattern_grid{
+    @apply  absolute w-[90%] lg:w-auto  right-[-45%] top-[-20%] lg:right-[-50%] lg:top-[-20%];
+}
+        

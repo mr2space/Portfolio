@@ -4,10 +4,10 @@
 }
 
 .app__navbar-logo{
-    @apply flex justify-center items-center;
+    @apply flex justify-center items-center w-[90px] h-[20px] lg:w-44 lg:h-10;
 }
 .app__navbar-logo img{
-    @apply w-[90px] h-[20px] lg:w-44 lg:h-10;
+    @apply w-full h-full object-cover;
 }
 
 .app__navbar-links{

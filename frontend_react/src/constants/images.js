@@ -26,6 +26,7 @@ import about04 from '../assets/about04.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/main_logo.png';
+import prince_logo from '../assets/prince_logo.jpeg';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -41,7 +42,50 @@ import mern from '../assets/mern.png';
 import django from '../assets/django.png';
 import docker from '../assets/docker.png';
 
+
+import java from '../assets/java_logo.png';
+import c_cpp from '../assets/c_cpp.jpeg';
+import python_neon from '../assets/python.jpeg';
+import js from '../assets/js.jpeg';
+import sql from '../assets/sql.jpeg';
+
+
+import nodejs from '../assets/nodejs.jpeg';
+import django2 from '../assets/django2.png';
+import mongodb from '../assets/Mongodb.png';
+
+import sudoku from '../assets/sudoku.jpeg';
+import notesApp from '../assets/notes_organizer.jpeg';
+import chatApp from '../assets/chat_app_2.png';
+import railline from '../assets/railline.jpg';
+
+import frontend from '../assets/frontend.jpeg';
+import backend from '../assets/backend.jpeg';
+import devops from '../assets/devops.jpeg';
+import ml from '../assets/machine_learning.jpeg';
+
+
+import backimg from '../assets/backg.png';
+import btn_backimg from '../assets/btn-back.png';
+import grid_pattern from '../assets/blue_grid.png';
+
 export default {
+  grid_pattern,
+  backimg,
+  btn_backimg,
+  prince_logo,
+  frontend,
+  backend,
+  devops,
+  ml,
+  mongodb,
+  django2,
+  nodejs,
+  sql,
+  js,
+  python_neon,
+  c_cpp,
+  java,
   aws,
   docker,
   mysql,
@@ -80,4 +124,8 @@ export default {
   nb,
   skype,
   spotify,
+  sudoku,
+  notesApp,
+  chatApp,
+  railline,
 };
