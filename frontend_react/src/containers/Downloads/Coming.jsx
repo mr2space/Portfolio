@@ -2,23 +2,22 @@ import React from "react";
 import AppWrap from '../../components/AppWrap';
 import MotionWrap from '../../components/MotionWrap';
 import images from '../../constants/images';
-import './Sudoku.css'
+import "./coming.css"
 
 const Coming = () => {
   return (
     <section
-      id="sudoku"
-      className="pt-40 lg:pt-20 w-screen h-screen overflow-hidden relative"
+      // id="sudoku"
+      className="pt-40 lg:pt-20 w-screen h-[80vh] overflow-hidden relative bg-white flex justify-center items-center flex-col gap-20"
     >
-      <h1 className="sudoku_heading">Soon</h1>
-      <h1 className="sudoku_heading">Available</h1>
+      <h1 className="text-cyan-900 text-7xl lg:text-8xl font-bold">Soon Available</h1>
 
-      <div className="btn_download ml-[8%]">
+      <div className="cbtn_download">
         <a href="#">COMING SOON</a>
       </div>
 
-      <div className="pattern_grid">
-        <img src={images.grid_pattern} alt="" />
+      <div className="bg-cyan-100 text-cyan-700 font-bold px-8 py-3 rounded-full border border-cyan-700">
+        <a href="/"> {'<-'} {" "} Go back</a>
       </div>
     </section>
   );

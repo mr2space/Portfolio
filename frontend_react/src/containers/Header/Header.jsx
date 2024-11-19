@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { images } from '../../constants';
+import { images, urls } from '../../constants';
 import AppWrap from '../../components/AppWrap';
 import './Header.css';
 
@@ -81,7 +81,7 @@ const Header = () => {
       </motion.div>
       
       <div className="resume-btn">
-          <a href="https://drive.google.com/file/d/1jNXosYE-evC4EepxM4J8Ii3k_Ze4zuLX/view?usp=sharing" target='_blank' download>Download Resume</a>
+          <a href={urls.resume_link} target='_blank' download>Download Resume</a>
       </div>
 
     </div>
